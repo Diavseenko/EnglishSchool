@@ -1,0 +1,104 @@
+//main: ..//style.less
+
+.five-d{
+	width: 100%;
+	background-image: url('../img/5dbg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0 25px;
+}
+
+.five-d__inner{
+	width: 100%;
+	height: 1040px;
+	text-align: center;
+	position: relative;
+	padding-top: 165px;
+
+	@media @laptop1199{
+		height: 1250px;
+	}
+
+	@media @laptop991{
+		overflow: hidden;
+	}
+
+}
+
+.five-d__wrapp{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position: relative;
+}
+
+.five-d__content{
+	width: 34%;
+	text-align: start;
+	padding-top: 100px;
+
+	@media @laptop1199{
+		width: 100%;
+		max-width: 555px;
+		margin: 0 auto;
+		margin-bottom: 35px;
+		padding-top: 50px;
+		padding-left: 25px;
+	}
+	@media @tablet660{
+		padding-top: 0;
+
+	}
+
+}
+
+.five-d__title{
+	font-family: 'LifehackBold';
+	font-size: 56px;
+	color: #fff;
+	margin-bottom: 15px;
+	letter-spacing:2.5px;
+}
+.five-d__title--five-d{
+	color: #7cbcf3;
+}
+
+
+.five-d__pone{
+	font-family: 'Museo700';
+	font-size: 17px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing:2.5px;
+	margin-bottom: 25px;
+}
+
+.five-d__pone--two-d{
+	color: #000;
+}
+
+.five-d__ptwo{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: #fff;
+	line-height: 25px;
+}
+
+.five-d__ptwo--two-d{
+	color: #000;
+}
+
+
+.five-d__img{
+	position: absolute;
+	top: -60px;
+	left: -135px;
+	z-index: 0;
+
+	@media @laptop1199{
+		display: none;
+	}
+}
+

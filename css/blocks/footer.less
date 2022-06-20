@@ -1,0 +1,88 @@
+//main: ../style.less
+
+.footer{
+	width: 100%;
+	height: 265px;
+
+	background-color: #3a5079;
+	display: flex;
+	align-items: center;
+	position: relative;
+
+	&:before{
+		content: "";
+		width: 90px;
+		height: 90px;
+		background-color: #3a5079;
+		border-radius: 50%;
+		position: absolute;
+		top: -55px;
+		left: 50%;
+		z-index: 5;
+
+		transform: translateX(-50%);
+	}
+
+	@media @laptop991{
+		height: 604px;
+	}
+}
+
+.footer__btn{
+	position: absolute;
+	top: -40px;
+	left: 50%;
+	z-index: 5;
+
+	transform: translateX(-46%);
+}
+
+.footer__up{
+	font-family: 'Museo500';
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 20px;
+	letter-spacing: 5px;
+}
+
+.footer__title{
+	font-family: 'Museo300';
+	font-size: 22px;
+	color: #fff;
+	margin-right: 50px;
+
+	@media (max-width: 1650px){
+		margin-right: 5px;
+
+	}
+
+}
+
+
+.footer__wait{
+	display: flex;
+	align-items: center;
+}
+
+.footer__link{
+	display: inline-block;
+	border: 2px solid #e68c0c;
+	border-radius: 50%;
+	padding: 14px;
+	margin: 0 5px;
+
+	transition: background-color .2s linear, border-color .5s linear;
+
+	&:hover{
+		background-color: #e68c0c;
+		border-color: #fff;
+	}
+
+}
+
+.footer__icon{
+	width: 22px;
+
+}

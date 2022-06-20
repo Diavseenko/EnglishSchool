@@ -1,0 +1,153 @@
+//main: ../style.less
+
+.btn{
+	border: 2px solid #ff9600;
+	border-radius: 20px;
+	color: #fff;
+
+	&--sticky{
+		font-family: "Museo500";
+		font-size: 15px;
+		background-color: transparent;
+		padding: 13px 39px;
+	}
+
+	&--header{
+		font-family: "Museo100";
+		font-size: 16px;
+		background-color: transparent;
+		padding: 19px 64px;
+		border-radius: 29px;
+		transition: background-color 0.2s linear, box-shadow 0.7s linear;
+		&:hover{
+			background-color: #ff9600;
+			box-shadow: 0px 0px 6px 1px #fff;
+		}
+	}
+
+	&--intro{
+		font-family: "Museo700";
+		font-size: 22px;
+		background-color: #fa9300;
+		padding: 30px 54px;
+		display: inline-block;
+		border-radius: 45px;
+		opacity: 1;
+		transition:box-shadow 0.3s linear;
+
+		@media @tablet660{
+			font-size: 24px;
+			background: #fa9400;
+			padding: 39px 103px;
+			border-radius: 55px;
+
+		}
+
+		&:hover{
+			box-shadow: 0px 0px 6px 1px #fff;
+
+		}
+	}
+
+	&--action{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+		font-size: 18px;
+		background-color: #73b4ed;
+		padding: 22px 70px;
+		display: inline-block;
+		border: none;
+		border-radius: 35px;
+		opacity: 1;
+		transition: box-shadow 0.3s linear;
+
+		@media @tablet660{
+
+			padding: 39px 144px;
+			border-radius: 50px;
+		}
+
+		&:hover{
+			box-shadow: 0px 0px 6px 4px #73b4ed;
+			background-color: #fff;
+			color: #73b4ed
+
+		}
+
+
+
+	}
+
+	&--duble{
+		margin: 0 17px;
+	}
+
+	&--programs{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+		font-size: 17px;
+		background-color: inherit;
+		padding: 15px 25px;
+		margin: 0 10px 9px 0;
+		display: inline-block;
+		border: 2px solid #617497;
+		border-radius: 30px;
+		opacity: 1;
+		transition: background 0.3s linear;
+
+		&:hover{
+			background: #73b4ed;
+			border-color: inherit;
+		}
+
+	}
+	&--choice{
+		font-family: 'Museo700';
+		font-size: 18px;
+		background-color: #fa9300;
+		padding: 20px 48px;
+		margin: 0;
+		display: inline-block;
+		border: 2px solid #617497;
+		border-radius: 30px;
+
+		transition: box-shadow 0.3s linear;
+
+		&:hover{
+			box-shadow: 0px 0px 6px 1px #fff;
+
+		}
+		@media @laptop991{
+		font-size: 24px;
+		padding: 44px 119px;
+			border-radius: 58px;
+	}
+	}
+
+	&--month{
+		font-family: 'Museo700';
+		font-size: 18px;
+		background-color: #fa9300;
+		padding: 22px 62px;
+		margin: 0;
+		display: inline-block;
+		border: 2px solid #617497;
+		border-radius: 37px;
+
+		transition: box-shadow 0.3s linear;
+
+		&:hover{
+			box-shadow: 0px 0px 6px 1px #fff;
+
+		}
+		@media @laptop991{
+		font-size: 24px;
+		padding: 44px 119px;
+			border-radius: 58px;
+	}
+	}
+
+
+}
+
+

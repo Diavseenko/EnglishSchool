@@ -1,0 +1,145 @@
+//main: ../style.less
+
+.month{
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	background: url('../img/monthbg.jpg') center no-repeat;
+	background-size: cover;
+	padding: 245px 0;
+	position: relative;
+	margin-bottom: 35px;
+
+}
+
+.month__inner{
+	padding: 0 15px;
+}
+
+.month__title{
+	font-family: 'lifehackBold';
+	font-size: 65px;
+	margin-bottom: 40px;
+
+	& span{
+		color: #fa9300;
+	}
+}
+
+.month__suptitle{
+	font-family: 'Museo500';
+	font-size: 26px;
+	margin-bottom: 40px;
+}
+
+.month__imgs{
+	padding-bottom: 85px;
+}
+
+.month__imgs-inner{
+	position: relative;
+}
+.month__sixsides{
+	width: 150px;
+	position: absolute;
+	top: 0;
+	left: -230px;
+	z-index: 1;
+
+	@media @laptop1199{
+		display: none;
+	}
+}
+
+.month__foursides{
+	position: absolute;
+	bottom: -55px;
+	left: 65px;
+	z-index: -1;
+
+	@media @laptop1199{
+		display: none;
+	}
+}
+
+.month__threesides{
+	position: absolute;
+	bottom: -155px;
+	right: -135px;
+	z-index: 0;
+
+	transform: rotateZ(180deg);
+
+	@media @laptop1199{
+		display: none;
+	}
+}
+
+.month__slider{
+	width: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.month__slider-img{
+	width: 100%;
+	max-width: 950px;
+	height: auto;
+	margin: 0 50px;
+}
+
+
+
+
+.month__undertitle{
+	width: fit-content;
+	font-family: 'LifehackBold';
+	font-size: 45px;
+	margin-bottom: 25px;
+	position: relative;
+	margin: 0 auto;
+
+	&:before{
+		content: "";
+		width: 95px;
+		height: 10px;
+		background: url('../img/orangeline.png') center no-repeat;
+		background-size: cover;
+		position: absolute;
+		top: 50%;
+		left: -100px;
+		z-index: 1;
+		transform: translate3d(0, -50%, 0);
+	}
+
+	&:after{
+		content: "";
+		width: 95px;
+		height: 10px;
+		background: url('../img/orangeline.png') center no-repeat;
+		background-size: cover;
+		position: absolute;
+		top: 50%;
+		right: -100px;
+		z-index: 1;
+		transform: translate3d(0, -50%, 0);
+	}
+
+
+}
+.month__midltitle{
+	font-family: 'Museo900';
+	font-size: 26px;
+	margin-bottom: 25px;
+}
+
+.month__underground{
+	width: 100%;
+	max-width: 874px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 17px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}

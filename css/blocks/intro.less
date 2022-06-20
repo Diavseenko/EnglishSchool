@@ -1,0 +1,290 @@
+//main: ../style.less
+
+.intro{
+	background: url('../img/children.jpg') center no-repeat;
+	background-size: cover;
+	position: relative;
+
+	@media @tablet660{
+		padding-bottom: 120px;
+	}
+
+
+}
+
+.intro__header{
+	width: 100%;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 55px;
+	padding-right: 74px;
+
+	@media @laptop1366{
+		display: none;
+	}
+	&--footer{
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+
+}
+
+.intro__item{
+	display: flex;
+	align-items: center;
+
+	margin-top: 24px;
+
+	@media @laptop1366{
+		margin-top: 0;
+	}
+	@media (max-width:1500px){
+		width: 50%;
+		margin: 10px auto;
+	}
+	@media @laptop991{
+		width: 100%;
+		justify-content: flex-start;
+	}
+}
+
+.intro__text{
+	font-family: "Museo300";
+	font-size: 22px;
+	color: #fff;
+	text-align: start;
+	margin-left: 42px;
+	margin-right: 105px;
+
+	@media (max-width: 1650px){
+		margin-left: 5px;
+		margin-right: 5px;
+
+	}
+	@media @laptop1366{
+		margin-right: 5px;
+
+	}
+	@media @tablet660{
+		margin-left: 5px;
+	}
+}
+
+.intro__title{
+	font-family: "Museo300";
+	font-size: 11px;
+	color: #fff;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+}
+
+.intro__select{
+	font-family: "Museo500";
+	font-size: 20px;
+	color: #fff;
+	border: none;
+	background-color: inherit;
+	outline: none;
+& option{
+	font-size: 20px;
+	background-color: #405a89;
+	}
+}
+
+
+.phone__img{
+	width: 55px;
+	height: 55px;
+	border: 2px solid #e68c0c;
+	border-radius: 50%;
+	padding: 17px;
+	transition: background-color .2s linear, border-color .5s linear;
+
+	&:hover{
+		background-color: #e68c0c;
+		border-color: #fff;
+	}
+
+}
+
+.intro__wrapp{
+	width: 100%;
+	text-align: end;
+	display: flex;
+	justify-content: space-between;
+	padding-right: 48px;
+	padding-bottom: 0px;
+
+}
+
+.intro__in-img{
+	height: 820px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	position: relative;
+
+	@media @laptop1199{
+		display: none;
+	}
+}
+
+.intro__hat{
+	width: 100%;
+	max-width: 295px;
+	height: auto;
+	position: relative;
+	top: 70px;
+	left:126px;
+	z-index: 20;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	transform-origin: bottom;
+}
+.hat {
+	animation-name: hat;
+	animation-timing-function: linear;
+}
+
+@keyframes hat {
+		0% { transform: translateY(20px); }
+		25% { transform: rotateZ(1deg); }
+		30% { transform: rotateZ(-2deg); }
+		35% { transform: rotateZ(3deg); }
+		45% { transform: rotateZ(-2deg); }
+		50% { transform: rotateZ(2deg); }
+		100% { transform: translateY(20px); }
+}
+
+.intro__img{
+	height: 625px;
+	max-width: 625px;
+	overflow-y: hidden;
+
+}
+
+.intro__img-img{
+	width: 100%;
+}
+
+.intro__in{
+
+	@media @laptop1199{
+		text-align: start;
+		padding-left: 55px;
+		}
+
+}
+
+.intro__main{
+	width: 100%;
+	font-family: "LifehackReg" ;
+	font-size: 86px;
+	text-transform: uppercase;
+	text-align: end;
+	color: #fff;
+
+	margin-top: 55px;
+	margin-bottom: 40px;
+
+	@media @laptop1199{
+		text-align: start;
+		margin-bottom: 35px;
+		margin-top: 25px;
+	}
+
+	@media @tablet660{
+		margin-top: 45px;
+		margin-bottom: 40px;
+		font-size: 76px;
+
+}
+}
+
+.intro__submain{
+	font-family: "Museo500";
+	font-size: 31px;
+	text-transform: none;
+	text-align: end;
+	color: #fff;
+	line-height: 1.2;
+
+	margin-bottom: 40px;
+
+	@media @laptop1199{
+		text-align: start;
+	}
+
+	@media @tablet660{
+		margin-bottom: 45px;
+	}
+
+}
+
+
+.arrow-down{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	transform: rotate(-90deg);
+
+	position: absolute;
+	top: 685px;
+	z-index: 5;
+	@media @laptop1390{
+		display:none;
+	}
+
+}
+
+.ring{
+	width: 50px;
+	height: 50px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: rotate(90deg);
+
+}
+.arrow-down__text{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 11px;
+	color: #fff;
+	margin-left: 15px;
+}
+
+
+.arrow {
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		transform-origin: bottom;
+
+	}
+.move {
+		animation-name: move;
+		animation-timing-function: linear;
+	}
+	@keyframes move {
+		0%   { transform: translateY(0); }
+		50%  { transform: translateY(-10px); }
+		100% { transform: translateY(0); }
+	}
+
+.intro__clouds{
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+	z-index: 20;
+	background: url(../img/cloudtop2.png) center no-repeat;
+	background-size: cover;
+
+	@media @laptop1199{
+		display: none;
+	}
+}

@@ -1,0 +1,66 @@
+//main: ..//style.less
+
+.video{
+	max-height: 895px;
+	backgroun
+
+	d: url('../img/video.jpg') center no-repeat;
+	background-size: cover;
+	margin-bottom: 45px;
+
+}
+.video__inner{
+	width: 100%;
+	text-align: center;
+	padding-top: 300px;
+	padding-bottom: 170px;
+}
+.video__text{
+	width: 100%;
+	max-width: 950px;
+	height: auto;
+	font-family: "Museo500";
+	font-size: 21px;
+	color: #000;
+
+	margin: 0 auto;
+	margin-bottom: 60px;
+	background-image: url('../img/cloud.png');
+	background-repeat: no-repeat;
+	background-size: 100% 273px;
+	background-position: center;
+	padding: 100px;
+
+}
+.video__link{
+	display: block;
+}
+
+.video__img{
+	transition: transform .3s linear;
+	&:hover{
+		transform: rotateZ(120deg);
+	}
+}
+
+
+.video__wrapp{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 100px;
+
+	&--left{
+		justify-content: flex-start;
+		padding-left: 0;
+	}
+}
+
+.video__img-text{
+	font-family: "Museo700";
+	font-size: 20px;
+	color: #fa9300;
+	text-align: start;
+	margin-left: 15px;
+	text-decoration: underline;
+}

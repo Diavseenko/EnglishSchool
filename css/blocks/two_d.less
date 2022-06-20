@@ -1,0 +1,34 @@
+//main: ..//style.less
+
+.two-d__inner{
+	width: 100%;
+	padding-top: 160px;
+	overflow: hidden;
+
+	@media @tablet660{
+		padding-top: 20px;
+	}
+}
+
+.two-d__img{
+	position: absolute;
+	bottom: -15px;
+	left: -45px;
+	z-index: -1;
+}
+
+.two-d__6sides{
+	width: 150px;
+	position: absolute;
+	top: -50px;
+	right: -35px;
+	z-index: -1;
+}
+
+.two-d__3sides{
+	position: absolute;
+	bottom: -36px;
+	right: -180px;
+	z-index: -1;
+	transform: rotateZ(180deg);
+}

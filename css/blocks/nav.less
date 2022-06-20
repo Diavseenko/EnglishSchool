@@ -1,0 +1,145 @@
+//main: ../style.less
+
+.nav{
+	width: 100%;
+	height: 77px;
+	background-color: #293a5d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@media @laptop1366{
+		display: none;
+	}
+}
+
+.nav__link{
+
+	font-family: "Museo100";
+	font-size: 18px;
+	color: #fff;
+	margin: 0 27px;
+	position: relative;
+
+	transition: color .2s linear;
+
+	&:after{
+		content: "";
+		width: 100%;
+		height: 2px;
+		background-color: #fa9300;
+		position: absolute;
+		bottom: -2px;
+		left: 0;
+		z-index: 25;
+		opacity: 0;
+		transition: opacity .2s linear;
+
+	}
+		&.active{
+			color: #fa9300;
+	}
+		&.active:after{
+			opacity: 1;
+	}
+		&:hover{
+			color: #fa9300;
+	}
+		&:hover:after{
+			background-color: #fa9300;
+			opacity: 1;
+	}
+}
+
+
+.burger{
+	width: 100%;
+	display: none;
+	justify-content: space-between;
+	padding: 45px 55px 0;
+	margin-top: 0;
+
+	@media @laptop1366{
+		display: flex;
+	}
+}
+
+.burger__wrapp{
+	width: 111px;
+	height: 111px;
+	border: 2px solid #3c5f8a;
+	border-radius: 50%;
+	padding: 20px 27px 20px 27px;
+}
+
+.burger__menu{
+	display: none;
+	position: relative;
+	width: 52px;
+	height: 52px;
+	border-bottom: 5px solid #fff;
+
+
+
+	&:before{
+		content: "";
+		width: inherit;
+		height: 5px;
+		background-color: #fff;
+
+		position: absolute;
+		top:31px;
+		left: 0;
+		z-index: 2;
+
+		transition: transform 0.2s linear;
+	}
+
+	&:after{
+		content: "";
+		width: inherit;
+		height: 5px;
+		background-color: #fff;
+
+		position: absolute;
+		top: 14px;
+		left: 0;
+		z-index: 2;
+
+		transition: transform 0.2s linear;
+	}
+
+	&.active{
+		border-bottom: 3px solid transparent;
+
+	&:before{
+		content: "";
+		transform: translate3d(0, 0, 0) rotate(-45deg);
+
+	}
+
+	&:after{
+		content: "";
+		transform: translate3d(0, 17px, 0) rotate(45deg);
+	}
+	}
+	@media @laptop1390{
+		display: block;
+	}
+}
+
+.nav__btn{
+	display: none;
+	text-decoration: none;
+
+	@media @laptop1390{
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+

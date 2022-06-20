@@ -1,0 +1,48 @@
+//main: ..//style.less
+
+.statistic{
+	padding: 0 20px 0;
+	position: relative;
+}
+
+.statistic__inner{
+	width: 100%;
+	max-width: 1000px;
+	margin: 30px auto 60px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	@media @tablet660{
+		margin-bottom: 20px;
+	}
+}
+
+.statistic__item{
+	width: 25%;
+	text-align: center;
+
+	@media @tablet767{
+		width: 50%;
+		margin-bottom: 100px;
+	}
+	@media @tablet660{
+		padding: 0;
+	}
+}
+
+.statistic__num{
+	font-family: "LifehackBold";
+	font-size: 99px;
+	color: #73b4ed;
+
+	@media @tablet660{
+		color: #44b5f0;
+	}
+}
+
+.statistic__text{
+	font-family: "Museo700";
+	font-size: 24px;
+	color: #111;
+}

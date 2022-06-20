@@ -1,0 +1,92 @@
+//main: ../style.less
+
+.feedback{
+	width: 100%;
+	background: url('../img/feedbackbg.jpg') center no-repeat;
+	background-size: cover;
+	margin-top: 45px;
+	margin-bottom: 40px;
+	text-align: center;
+	padding: 160px 0;
+}
+
+.feedback__title{
+	font-family: 'LifehackBold';
+	font-size: 65px;
+	color: #fff;
+	margin-bottom: 60px;
+
+	& span{
+		color: #73b4ed;
+	}
+
+}
+.feedback__slider{
+	width: auto;
+	position: relative;
+	padding: 0 35px;
+	padding-bottom: 50px;
+	margin-bottom: 20px;
+
+}
+
+.feedback__arrowleft-link{
+	position: absolute;
+	top: 42%;
+	left: 0;
+	z-index: 5;
+	transform: translateY(-50%);
+
+}
+
+.feedback__arrowright-link{
+	position: absolute;
+	top: 42%;
+	right: 0;
+	z-index: 5;
+	transform: translateY(-50%);
+
+}
+
+.feedback__imgs{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.feedback__item{
+	width: 33.333%;
+	position: relative;
+
+	&.active{
+		@media @laptop1199{
+			display: none;
+		}
+	}
+
+}
+
+.feedback__video-img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 5;
+	transform: translate3d(-50%, -50%, 0);
+	}
+
+.feedback__window{
+	height: 950px;
+	margin-bottom: 35px;
+
+	@media @tablet660{
+		height: 550px;
+	}
+
+}
+
+.feedback__window-img{
+	width: 100%;
+	max-width: 1070px;
+	height: auto;
+}
